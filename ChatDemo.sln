@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatDemo", "ChatDemo\ChatDemo.csproj", "{0EFAB549-54EA-4A43-A378-D474C6C16B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClient", "SocketClient\SocketClient.csproj", "{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EFAB549-54EA-4A43-A378-D474C6C16B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFAB549-54EA-4A43-A378-D474C6C16B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFAB549-54EA-4A43-A378-D474C6C16B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFAB549-54EA-4A43-A378-D474C6C16B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

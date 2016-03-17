@@ -1,0 +1,9 @@
+F:\program\practice test\ChatDemo\ChatDemo\bin\Debug\ChatDemo.exe.config
+F:\program\practice test\ChatDemo\ChatDemo\bin\Debug\ChatDemo.exe
+F:\program\practice test\ChatDemo\ChatDemo\bin\Debug\ChatDemo.pdb
+F:\program\practice test\ChatDemo\ChatDemo\obj\Debug\ChatDemo.csprojResolveAssemblyReference.cache
+F:\program\practice test\ChatDemo\ChatDemo\obj\Debug\ChatDemo.MainForm.resources
+F:\program\practice test\ChatDemo\ChatDemo\obj\Debug\ChatDemo.Properties.Resources.resources
+F:\program\practice test\ChatDemo\ChatDemo\obj\Debug\ChatDemo.csproj.GenerateResource.Cache
+F:\program\practice test\ChatDemo\ChatDemo\obj\Debug\ChatDemo.exe
+F:\program\practice test\ChatDemo\ChatDemo\obj\Debug\ChatDemo.pdb

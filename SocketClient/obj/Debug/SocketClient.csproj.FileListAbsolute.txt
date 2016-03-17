@@ -1,0 +1,8 @@
+F:\program\practice test\ChatDemo\SocketClient\bin\Debug\SocketClient.exe.config
+F:\program\practice test\ChatDemo\SocketClient\bin\Debug\SocketClient.exe
+F:\program\practice test\ChatDemo\SocketClient\bin\Debug\SocketClient.pdb
+F:\program\practice test\ChatDemo\SocketClient\obj\Debug\SocketClient.MainForm.resources
+F:\program\practice test\ChatDemo\SocketClient\obj\Debug\SocketClient.Properties.Resources.resources
+F:\program\practice test\ChatDemo\SocketClient\obj\Debug\SocketClient.csproj.GenerateResource.Cache
+F:\program\practice test\ChatDemo\SocketClient\obj\Debug\SocketClient.exe
+F:\program\practice test\ChatDemo\SocketClient\obj\Debug\SocketClient.pdb
