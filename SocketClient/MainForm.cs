@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -24,6 +25,7 @@ namespace SocketClient
         public MainForm()
         {
             InitializeComponent();
+            Control.CheckForIllegalCrossThreadCalls = false;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -88,11 +90,19 @@ namespace SocketClient
                     return;//终结当前异步线程
                 }
 
-                //接受带协议的数据，1：字符串 2：文件   3：闪屏
+                //接受带协议的数据，1：字符串 3：文件   2：闪屏
                 if( data[0] == 1 )
                 {
                     string strMsg =  ProcessReceivestring(data);
                     AppendTextToLog(string.Format("接受到服务器端 {0} 的消息：{1}", proxSocket.RemoteEndPoint.ToString(), strMsg));
+                }
+                else if(data [0] == 2)
+                {
+                    Shake();
+                }
+                else if(data[0] == 3)
+                {
+                    ProcessReceiveFile(data,realLen);
                 }
                 
             }
@@ -144,6 +154,40 @@ namespace SocketClient
             return str;
             //把接受的数据放到文本框上
             
+        }
+        #endregion 
+
+        #region 闪屏
+        public void Shake()
+        {
+            Point oldLocation = this.Location;
+            Random r = new Random();
+
+            for(int i = 0 ; i < 30 ; i++)
+            {
+                this.Location = new Point(r.Next(oldLocation.X - 10,oldLocation.X + 10),
+                    r.Next(oldLocation.Y - 10,oldLocation.Y + 10 ));
+                Thread.Sleep(30);
+                this.Location = oldLocation;
+            }
+        }
+        #endregion
+
+        #region 处理接受的文件
+        public void ProcessReceiveFile(byte[] data,int realLen)
+        {
+            using(SaveFileDialog sfd = new SaveFileDialog ())
+            {
+                sfd.DefaultExt = "txt";
+                sfd.Filter = "文件名(*.txt)|*.txt|所有文件(*.*)|*.*";
+                if(sfd.ShowDialog(this) != DialogResult.OK)
+                {
+                    return;
+                }
+                byte[] fileData = new byte[realLen - 1];
+                Buffer.BlockCopy(data, 1, fileData, 0, realLen - 1);
+                File.WriteAllBytes(sfd.FileName, fileData);
+            }
         }
         #endregion 
     }

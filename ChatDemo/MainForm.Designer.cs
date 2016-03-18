@@ -117,6 +117,7 @@
             this.btnSendFile.TabIndex = 8;
             this.btnSendFile.Text = "发送文件";
             this.btnSendFile.UseVisualStyleBackColor = true;
+            this.btnSendFile.Click += new System.EventHandler(this.btnSendFile_Click);
             // 
             // btnSendAction
             // 
@@ -126,6 +127,7 @@
             this.btnSendAction.TabIndex = 9;
             this.btnSendAction.Text = "发送闪屏";
             this.btnSendAction.UseVisualStyleBackColor = true;
+            this.btnSendAction.Click += new System.EventHandler(this.btnSendAction_Click);
             // 
             // MainForm
             // 

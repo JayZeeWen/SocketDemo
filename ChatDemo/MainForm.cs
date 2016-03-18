@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -60,7 +61,45 @@ namespace ChatDemo
                 }
             }
         }
-        #endregion         
+        #endregion   
+      
+        #region 发送闪屏
+        private void btnSendAction_Click(object sender, EventArgs e)
+        {
+            foreach(var proxSocket in ClientSockets)
+            {
+                if(proxSocket.Connected)
+                {
+                    proxSocket.Send(new byte[]{2},SocketFlags.None);
+                }
+            }
+        }
+        #endregion 
+
+        #region 发送文件
+        private void btnSendFile_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                if (ofd.ShowDialog() != DialogResult.OK)
+                {
+                    return;
+                }
+                byte[] data = File.ReadAllBytes(ofd.FileName);
+                byte[] result = new byte[data.Length + 1];
+                result[0] = 3;
+                Buffer.BlockCopy(data, 0, result,1,data.Length);
+                foreach (var proxSocket in ClientSockets)
+                {
+                    if (!proxSocket.Connected)
+                    {
+                        continue;
+                    }
+                    proxSocket.Send(result, SocketFlags.None);
+                }
+            }            
+        }
+        #endregion 
 
         private void AcceptClientConnect(object state)
         {
@@ -145,5 +184,7 @@ namespace ChatDemo
                 this.txtLog.Text = string.Format("{0}\r\n", txt) + this.txtLog.Text;
             }
         }
+
+        
     }
 }
