@@ -1,0 +1,6 @@
+c:\users\jayzee\documents\visual studio 2013\Projects\iis\iis\bin\iis.dll.config
+c:\users\jayzee\documents\visual studio 2013\Projects\iis\iis\bin\iis.dll
+c:\users\jayzee\documents\visual studio 2013\Projects\iis\iis\bin\iis.pdb
+c:\users\jayzee\documents\visual studio 2013\Projects\iis\iis\obj\Debug\iis.csprojResolveAssemblyReference.cache
+c:\users\jayzee\documents\visual studio 2013\Projects\iis\iis\obj\Debug\iis.dll
+c:\users\jayzee\documents\visual studio 2013\Projects\iis\iis\obj\Debug\iis.pdb

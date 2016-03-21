@@ -179,7 +179,7 @@ namespace SocketClient
             using(SaveFileDialog sfd = new SaveFileDialog ())
             {
                 sfd.DefaultExt = "txt";
-                sfd.Filter = "文件名(*.txt)|*.txt|所有文件(*.*)|*.*";
+                sfd.Filter = "文件名(*.txt)|*.txt|所有文件(*.*)|*.*"; 
                 if(sfd.ShowDialog(this) != DialogResult.OK)
                 {
                     return;

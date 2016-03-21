@@ -1,0 +1,9 @@
+F:\program\practice test\ChatDemo\MyIIS\bin\Debug\MyIIS.exe.config
+F:\program\practice test\ChatDemo\MyIIS\bin\Debug\MyIIS.exe
+F:\program\practice test\ChatDemo\MyIIS\bin\Debug\MyIIS.pdb
+F:\program\practice test\ChatDemo\MyIIS\obj\Debug\MyIIS.csprojResolveAssemblyReference.cache
+F:\program\practice test\ChatDemo\MyIIS\obj\Debug\MyIIS.Form1.resources
+F:\program\practice test\ChatDemo\MyIIS\obj\Debug\MyIIS.Properties.Resources.resources
+F:\program\practice test\ChatDemo\MyIIS\obj\Debug\MyIIS.csproj.GenerateResource.Cache
+F:\program\practice test\ChatDemo\MyIIS\obj\Debug\MyIIS.exe
+F:\program\practice test\ChatDemo\MyIIS\obj\Debug\MyIIS.pdb

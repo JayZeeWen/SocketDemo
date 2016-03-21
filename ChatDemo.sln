@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatDemo", "ChatDemo\ChatDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClient", "SocketClient\SocketClient.csproj", "{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIIS", "MyIIS\MyIIS.csproj", "{93FB1256-252C-4746-84D3-4FC5ADF15508}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBEAAB0D-82F0-4EFA-AD5D-C92D3F0B8CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FB1256-252C-4746-84D3-4FC5ADF15508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FB1256-252C-4746-84D3-4FC5ADF15508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FB1256-252C-4746-84D3-4FC5ADF15508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FB1256-252C-4746-84D3-4FC5ADF15508}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
